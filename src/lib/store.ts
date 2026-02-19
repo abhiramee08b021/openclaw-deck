@@ -219,7 +219,7 @@ export const useDeckStore = create<DeckStore>((set, get) => ({
   appendMessageChunk: (agentId, runId, chunk) => {
     set((state) => {
       const session = state.sessions[agentId];
-      if (!session) return state;
+      if (!session || !session.messages) return state;
 
       const messages = session.messages.map((msg) => {
         if (msg.runId === runId && msg.streaming) {
@@ -244,7 +244,7 @@ export const useDeckStore = create<DeckStore>((set, get) => ({
   finalizeMessage: (agentId, runId) => {
     set((state) => {
       const session = state.sessions[agentId];
-      if (!session) return state;
+      if (!session || !session.messages) return state;
 
       const messages = session.messages.map((msg) => {
         if (msg.runId === runId) {
