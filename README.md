@@ -8,6 +8,7 @@ A multi-column chat interface for [OpenClaw](https://openclaw.ai) agents. Chat w
 ## Features
 
 - **Multi-column layout** — Chat with 7 agents simultaneously by default
+- **11 Beautiful Themes** — Dark themes from Midnight to Monokai, including popular editor themes (Darcula, Dracula, Nord, Gruvbox)
 - **Markdown rendering** — Full markdown support with syntax highlighting
 - **Keyboard navigation** — Fast switching between columns (Tab, Cmd+1-9, Cmd+K)
 - **Real-time WebSocket** — Live connection to OpenClaw Gateway
@@ -20,6 +21,7 @@ A multi-column chat interface for [OpenClaw](https://openclaw.ai) agents. Chat w
 - [Configuration](#configuration)
 - [Running the Application](#running-the-application)
 - [Usage](#usage)
+- [Themes](#themes)
 - [Troubleshooting](#troubleshooting)
 - [Development](#development)
 - [Architecture](#architecture)
@@ -266,6 +268,47 @@ Each column represents an independent agent conversation:
   - Lists (bulleted and numbered)
   - Code blocks with syntax highlighting
   - Inline code, quotes, tables, and more
+
+---
+
+## Themes
+
+OpenClaw Deck comes with **11 beautiful dark themes** inspired by popular code editors and color schemes. Switch themes instantly using the theme selector in the top right corner.
+
+### Available Themes
+
+| Theme | Description |
+|-------|-------------|
+| **Midnight** | Deep blue-black with subtle cyan accents (default) |
+| **Ocean Depths** | Navy blue inspired by ocean depths |
+| **Forest Night** | Dark green forest theme |
+| **Sunset Glow** | Warm burgundy with orange highlights |
+| **Slate Gray** | Professional slate blue |
+| **Purple Haze** | Deep purple with violet accents |
+| **Cyberpunk** | Neon pink and cyan on dark blue |
+| **Rose Garden** | Burgundy with rose pink highlights |
+| **Abyss** | Ultra-dark theme (true black) |
+| **Darcula** | JetBrains IDE classic theme |
+| **Dracula** | The popular Dracula color scheme |
+| **Nord** | Arctic-inspired frost palette |
+| **Gruvbox Dark** | Retro groove color scheme |
+| **Monokai** | Classic Monokai editor theme |
+
+### Switching Themes
+
+1. Look for the **theme icon** (🎨) in the top right corner of the interface
+2. Click to open the theme selector dropdown
+3. Choose any theme — changes apply instantly
+4. Your preference is saved automatically in browser storage
+
+### Theme Persistence
+
+Your selected theme is stored in `localStorage` and persists across:
+- Browser refreshes
+- Closing and reopening tabs
+- Gateway restarts
+
+No configuration needed — just pick your favorite and start chatting.
 
 ---
 
